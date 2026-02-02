@@ -21,9 +21,6 @@ public class StackUsingQueue<E> implements StackADT<E> {
 
     @Override
     public E top() {
-        if (isEmpty()) {
-            throw new IllegalStateException("Stack is empty");
-        }
         return q.first();
     }
 
@@ -47,9 +44,6 @@ public class StackUsingQueue<E> implements StackADT<E> {
 
     @Override
     public E pop() {
-        if (isEmpty()) {
-            throw new IllegalStateException("Stack is empty");
-        }
         return q.dequeue();
     }
 
